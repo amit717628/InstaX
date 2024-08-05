@@ -1,1 +1,5 @@
-console.log("K")
+import { Main } from "./src/base/Main";
+
+
+     Main.start()
+
