@@ -5,6 +5,9 @@ import delay from 'delay';
 import { Spin } from '../utlils/Spinner';
 import { terminal } from 'terminal-kit';
 import { ApiStatus } from '../main/ApiStatus';
+import { messageLog, MessageType } from '../utlils/MessageLog';
+import { Menu } from './Menu';
+import { input } from '../main/Input';
 
 
 
@@ -44,7 +47,11 @@ export class Main {
             console.log(line);
         });
 
-     
+     // Welcome END
+
+
+
+     //  Checking 
         const srting = Spin("Loading...")
         await new Promise(resolve => setTimeout(resolve, 5000)); 
         
@@ -57,18 +64,14 @@ await new Promise(resolve => setTimeout(resolve, 5000));
 const apistatus = await ApiStatus();
 
 if(!apistatus.status){
-console.log("Api Is Not Responding! Try Again Later")
-await new Promise(resolve => setTimeout(resolve, 5000)); 
-srting.stop()
+    srting.stop() 
+messageLog(MessageType.ERROR,"API is offline! Try Again Later...")
+
 } else {
     
 
-
-
-   
-        srting.setText("Verifying Script...  ")
         await new Promise(resolve => setTimeout(resolve, 5000)); 
-        srting.setText("Starting InstaX...")
+        srting.setText("Starting InstaX ... ")
         await new Promise(resolve => setTimeout(resolve, 5000)); 
         srting.stop()
 
@@ -76,10 +79,17 @@ srting.stop()
 }
 
 
+// Checking End
 
 
-        
+// Showing Menu
+        Menu()
+//
 
+
+
+// Input
+input()
 
         
 

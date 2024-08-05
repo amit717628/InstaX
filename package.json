@@ -15,9 +15,12 @@
     "axios": "^1.7.3",
     "cli-spinners": "^3.1.0",
     "delay": "^6.0.0",
+    "got": "^14.4.2",
     "inquirer": "^10.0.4",
     "instagram-private-api": "^1.46.1",
     "ora": "^8.0.1",
+    "terminal-image": "^3.0.0",
+    "terminal-img": "^2.0.24",
     "terminal-kit": "^3.1.1",
     "typescript": "^5.5.3"
   }
