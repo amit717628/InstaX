@@ -14,8 +14,6 @@ export async function UserMenu(username: string,faceUrl:FaceAnalysisResponse): P
       ['Option', 'Name', 'Info'],
       ['1', 'View Followers List', 'Fetch Followers List'],
       ['2', 'Scan Face', 'Scan Profile Face'],
-      ['3', 'View Following', 'Fetch Following'],
-      ['4', 'View Posts', 'Fetch Posts']
       // More options can be added here
     ],
     {
@@ -214,7 +212,7 @@ const data = [
   ['Chin Bottom', formatPoint(dataset.landmarks.chinBottom)],
 ];
 
-
+terminal(`\n\n`)
 
 terminal.table(data, {
   hasBorder: true,
@@ -247,3 +245,5 @@ terminal.table(data, {
 
   );
 }
+
+// BY AMIT717628

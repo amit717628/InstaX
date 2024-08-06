@@ -8,9 +8,8 @@ terminal.table(
     [
 [ 'Option' , 'Name' , 'Info' ] ,
 ["1", "User Information", "Fetch User Information"],
-["2", "Post Information", "Fetch Post Information"],
-["3","Like", "Fetch Likes"],
-["4","Highlight Information", "Fetch Highlight"]
+["2","Like Fetch", "Fetch Likes"],
+["3","Credits", "Information"],
 
 // More
 
@@ -32,10 +31,11 @@ terminal.table(
 
  }
 )
-
-
-
+terminal(`\n`)
+terminal.yellow.bgRed("Version : v1")
 
 
 
 }
+
+// BY AMIT717628

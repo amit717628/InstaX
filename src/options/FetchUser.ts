@@ -3,7 +3,6 @@ import { UserProfile } from "../interfaces/UserInfo";
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 import config from "../../config";
 import { draw, drawAsString } from 'terminal-img';
-import { viewProfile } from "../base/UserProfile";
 import { UserMenu } from "../base/UserMenu";
 import { FaceCheck } from "../main/FaceCheck";
 
