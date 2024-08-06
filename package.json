@@ -1,7 +1,7 @@
 {
-  "name": "upix",
+  "name": "instax",
   "version": "1.0.0",
-  "description": "upi bomber",
+  "description": "nstaX is an advanced Open Source Intelligence (OSINT) tool leveraging artificial intelligence to enhance intelligence-gathering capabilities on Instagram. It offers powerful features to extract and analyze data from Instagram, providing valuable insights and intelligence.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,5 +28,18 @@
     "terminal-img": "^2.0.24",
     "terminal-kit": "^3.1.1",
     "typescript": "^5.5.3"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amit717628/InstaX.git"
+  },
+  "keywords": [
+    "osint",
+    "instagram"
+  ],
+  "bugs": {
+    "url": "https://github.com/amit717628/InstaX/issues"
+  },
+  "homepage": "https://github.com/amit717628/InstaX#readme"
 }
