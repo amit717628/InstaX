@@ -1,9 +1,5 @@
 import config from '../../config';
-import axios, { AxiosRequestConfig } from 'axios';
-import * as timers from 'node:timers/promises';
-import delay from 'delay';
 import { Spin } from '../utlils/Spinner';
-import { terminal } from 'terminal-kit';
 import { ApiStatus } from '../main/ApiStatus';
 import { messageLog, MessageType } from '../utlils/MessageLog';
 import { Menu } from './Menu';

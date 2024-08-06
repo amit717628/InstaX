@@ -3,6 +3,9 @@ import { UserProfile } from "../interfaces/UserInfo";
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios';
 import config from "../../config";
 import { draw, drawAsString } from 'terminal-img';
+import { viewProfile } from "../base/UserProfile";
+import { UserMenu } from "../base/UserMenu";
+
 
 
 
@@ -134,8 +137,7 @@ terminal.table(data, {
  })
 
 
-terminal.red.bgBlack("InstaX By Amit Kumar Singh");
-
+UserMenu(username)
 
 return userProfile;
 
