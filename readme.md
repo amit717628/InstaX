@@ -42,24 +42,31 @@ InstaX is an AI-based OSINT (Open Source Intelligence) tool designed to enhance 
 
 ## Screenshots
 
-### Main Menu
 ![Menu](https://i.ibb.co/wygF4JT/Screenshot-2024-08-07-at-12-52-08-AM.png)
 
-### User Information
+### User Info
+
 ![User](https://i.ibb.co/sVj5qgx/Screenshot-2024-08-07-at-1-10-22-AM.png)
 ![User 2](https://i.ibb.co/G7N7ygk/Screenshot-2024-08-07-at-1-11-34-AM.png)
-![User 3](https://i.ibb.co/pvnpcTd/Screenshot-2024-08-07-at-1-12-51-AM.png)
-![User 4](https://i.ibb.co/rfLpJRf/Screenshot-2024-08-07-at-1-13-00-AM.png)
+![User3](https://i.ibb.co/pvnpcTd/Screenshot-2024-08-07-at-1-12-51-AM.png)
+![User4](https://i.ibb.co/rfLpJRf/Screenshot-2024-08-07-at-1-13-00-AM.png)
 
-### Follower Information
+### Followers Info
 ![Followers](https://i.ibb.co/NZ5wgKw/Screenshot-2024-08-07-at-1-15-44-AM.png)
 
 ### Face Scan
-![Face Scan](https://i.ibb.co/x1m60B6/Screenshot-2024-08-07-at-1-18-14-AM.png)
+![User](https://i.ibb.co/sVj5qgx/Screenshot-2024-08-07-at-1-10-22-AM.png)
+![User 2](https://i.ibb.co/G7N7ygk/Screenshot-2024-08-07-at-1-11-34-AM.png)
+![User3](https://i.ibb.co/pvnpcTd/Screenshot-2024-08-07-at-1-12-51-AM.png)
+![User4](https://i.ibb.co/rfLpJRf/Screenshot-2024-08-07-at-1-13-00-AM.png)
+![Scan](https://i.ibb.co/x1m60B6/Screenshot-2024-08-07-at-1-18-14-AM.png)
 
 ### Fetch Likes
-![Fetch 1](https://i.ibb.co/SVXqSnQ/Screenshot-2024-08-07-at-1-21-41-AM.png)
-![Fetch 2](https://i.ibb.co/fXHH6XJ/Screenshot-2024-08-07-at-1-20-43-AM.png)
+![Fetch](https://i.ibb.co/SVXqSnQ/Screenshot-2024-08-07-at-1-21-41-AM.png)
+![Fetch](https://i.ibb.co/fXHH6XJ/Screenshot-2024-08-07-at-1-20-43-AM.png)
+
+### Credits
+![Img](https://i.ibb.co/j8k9tq2/Screenshot-2024-08-07-at-1-23-10-AM.png)
 
 ## Contributing
 
