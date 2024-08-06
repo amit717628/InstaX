@@ -5,6 +5,7 @@ import config from "../../config";
 import { draw, drawAsString } from 'terminal-img';
 import { viewProfile } from "../base/UserProfile";
 import { UserMenu } from "../base/UserMenu";
+import { FaceCheck } from "../main/FaceCheck";
 
 
 
@@ -13,7 +14,7 @@ import { UserMenu } from "../base/UserMenu";
 export async function FetchUser(): Promise<UserProfile | any> {
 
 
-
+try {
 
 terminal.white.bgBrightBlack.bold("Enter Username :     ")
 
@@ -45,8 +46,22 @@ const userProfile: UserProfile = response.data;
 
 terminal.clear()
 
+const body = await axios.get(userProfile.data.profile_pic_url_hd, { responseType: 'arraybuffer' });
+
+try {
+const faceChecks = (await FaceCheck(userProfile.data.profile_pic_url))
+
+const faceCheck = faceChecks.body.faces[0]
+
+
+
+
+
 const data = [
     ['Full Name', userProfile.data.full_name ?? "N/A"],
+    ['Age', faceCheck.facialFeatures.AgeRange.Low?.toString() ?? "N/A"],
+    ['Max Age', faceCheck.facialFeatures.AgeRange.High?.toString() ?? "N/A"],
+    ['Gender', faceCheck.facialFeatures.Gender ?? "N/A"], 
     ['Username', userProfile.data.username ?? "N/A"],
     ['Bio', userProfile.data.biography ?? "N/A"],
     ['Followers', userProfile.data.follower_count?.toString() ?? "N/A"],
@@ -115,7 +130,7 @@ const data = [
 ];
 
 
-const body = await axios.get(userProfile.data.profile_pic_url_hd, { responseType: 'arraybuffer' });
+
 if(userProfile.data.profile_pic_url_hd !== null){
     await draw(body.data,{height: 50,width:50});
 }
@@ -137,17 +152,21 @@ terminal.table(data, {
  })
 
 
-UserMenu(username)
+UserMenu(username,faceChecks)
 
 return userProfile;
 
-
+} catch(err){
+  
+}
 
 
 
 
 })
 
-
+} catch(err){
+  console.log(err)
+}
 
 }

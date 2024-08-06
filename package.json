@@ -11,6 +11,7 @@
   "dependencies": {
     "@topcli/spinner": "^2.1.2",
     "@types/axios": "^0.14.0",
+    "@types/form-data": "^2.5.0",
     "@types/terminal-kit": "^2.5.6",
     "axios": "^1.7.3",
     "cli-spinners": "^3.1.0",
